@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSMA - Site de Notícias gerais</title>
+
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/media-query.css" media="all" />
+
+    <link rel="stylesheet" href="./fonts/remixicon.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Montserrat:wght@300&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+  </head>
+  <body onload="getNews()">
+
+
+     <!--
+          TODO: 
+          [] Controlar overflow de description;
+          [] Ajeitar a posição do button em 'card-item';
+          [] 
+
+        -->
+
+
+    <header class="header flex-container_row">
+      
+
+
+      <nav class="nav-bar">
+        <i
+          class="header-icon no-display profile-picture ri-account-circle-fill ri-2x"
+        ></i>
+        <a href=""><i class="header-icon menu-icon ri-menu-line ri-2x"></i></a>
+      </nav>
+
+
+ 
+
+      <div id="logo">
+        <h1>DSMA</h1>
+      </div>
+
+
+      <ul class="menu wrapper">
+        <li><a class="menu__link-items" href="index.html">Início</a></li>
+        <li><a class="menu__link-items" href="#">Tecnologia</a></li>
+        <li><a class="menu__link-items" href="#">Política</a></li>
+        <li><a class="menu__link-items" href="#">Esportes</a></li>
+      </ul>
+     
+
+ 
+    </header>
+
+    <aside class="nav">
+      <div class="search-bar">
+        <input
+          class="search-bar_proprieties"
+          type="search"
+          name=""
+          id=""
+          placeholder="Sei lá... pesquisa aí, bro."
+        />
+        <i class="header-icon search-icon ri-search-line ri-2x"></i>
+      </div>
+    </aside>
+
+    <main>
+      <div class="popular-news content-area wrapper">
+        <div class="title-trending-area">
+          <h3><i class="ri-fire-line"></i> Populares</h3>
+
+          <div class="popular-news__current-image flex-container_row">
+            <div class="popular-news__content">
+              Com primeira taça no Inter Miami, Messi se isola como o jogador
+              com mais títulos do futebol; veja ranking
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popular-news__cardbox cardbox">
+        <div class="popular-news__card-item"></div>
+        <div class="popular-news__card-item"></div>
+        <div class="popular-news__card-item"></div>
+        <div class="popular-news__card-item"></div>
+      </div>
+
+      <aside class="ad">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fportalapostasesportivas.com.br%2Fwp-content%2Fuploads%2F2022%2F04%2Fblaze-apostas.png&f=1&nofb=1&ipt=c6cdec8787e3323505bde32396658233b9f403b7c545a137b59a4500f38da4a1&ipo=images" alt=""
+        class="ad__image first-ad">
+      </aside>
+
+      <div class="general-news content-area">
+        <h3><i class="ri-newspaper-line"></i> Notícias gerais</h3>
+
+
+
+      </div> 
+
+      <div class="cardbox"></div>
+    </main>
+
+    <footer>Todos os diretos reservados.</footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,530 @@
+
+:root{
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'Montserrat', sans-serif;
+
+    font-size: 16px;
+
+    
+
+}
+
+#logo{
+    flex:1;
+    text-align: center;
+}
+
+
+.ad{
+    background-color: grey;
+    
+    min-height: 6rem;
+    max-height: 6rem;
+
+    min-width: 90%;
+    max-width: 90%;
+
+    margin: 0 auto;
+    margin-bottom: auto;
+
+    padding: 0;
+
+    text-align: center;
+
+}
+
+.ad img.ad__image{
+   
+    min-width: 100%;
+    min-height: inherit;
+    max-width: inherit;
+    max-height: inherit;
+
+
+    object-fit: cover;
+    
+
+
+
+}
+
+/* .ad__image .first-ad{
+
+} */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* html{
+    
+} */
+
+
+.no-visibility{
+    visibility: hidden;
+}
+
+
+
+.no-display{
+    display: none;
+}   
+
+
+/* Não funcionando */
+
+.flex-container_row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-container_column{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+header{
+    font-family: var(--primary-font);
+    background-image: linear-gradient(to bottom right, rgb(38, 148, 238), rgb(8, 55, 109));
+
+}
+
+
+header.header{
+    
+
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+
+    height: 12.2rem;
+    color: white;
+    
+}
+
+.nav{
+    padding: 0;
+    background-color: black;
+    padding: 2.4em;
+
+    color: white;
+}
+
+.search-bar{
+    
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    
+    
+    margin-left: 10px;
+
+    gap:0.5em;
+
+    
+
+    text-align: center;
+    
+}
+
+.search-bar>*{
+    display: inline-block;
+}
+
+
+
+.search-bar .search-bar_proprieties{
+    width: 90%;
+    padding: 1em 0;
+
+
+
+    top: 100px;
+    border-radius: 10px;
+
+}
+
+
+.popular-news{
+    background-color: rgba(231, 231, 231, 0.767);
+    color: black;
+    padding: 5vh 0;
+    
+}
+
+
+.popular-news__current-image{
+    background-image: url("https://s2-extra.glbimg.com/A1uLSjwvF3GNdfao-7mKR4fcPj4=/0x0:5039x3359/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f551ea7087a47f39ead75f64041559a/internal_photos/bs/2023/J/8/O1G3BTQLiWBNOq6BdUhQ/104014030-topshot-inter-miamis-argentine-forward-10-lionel-messi-poses-with-the-awards-for-best.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-color: black;
+
+    width: 100%;
+    height: 25rem;
+    margin: 2.5rem auto;
+}
+
+.popular-news__content{
+
+
+
+    background-color: rgba(0, 0, 0, 0.589);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    
+    align-self: flex-end;
+
+    height: 25%;
+    width: 100%;
+
+
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
+}
+
+
+
+
+
+
+
+
+main{
+
+    font-family: var(--secondary-font);
+
+    /* margin-left: 10%;
+    margin-right: 10%; */
+}
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper{
+    flex-wrap: wrap;
+}
+
+
+/* .slideshow{
+
+
+} */
+
+.header {
+    
+
+}
+
+
+
+.header .menu{
+
+    list-style: none;
+    flex: 1;
+
+    text-align: end;
+
+    margin-right: 1rem;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+.menu__link-items{
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: bold;
+}
+
+.menu__link-items:hover{
+    color:rgb(0, 255, 221);
+    text-decoration-line: underline;
+    text-decoration-thickness: 2.4px;
+}
+
+.menu__link-items:target{
+    color:rgb(0, 255, 221);
+}
+
+.nav-bar{
+    flex:1;
+}
+
+.nav-bar>*{
+
+    color: inherit;
+    text-decoration: inherit;
+
+}
+
+
+
+
+.content-area{
+    margin: 2.75em auto;
+
+}
+
+
+
+
+
+
+
+
+.cardbox{
+
+    display: flex;
+    flex-direction: row;
+    /* flex-grow: 0; */
+
+
+    background-color: rgb(255, 255, 255);
+    margin: 2em 0;
+
+    font-size: 16px;
+
+    overflow-x: auto;
+    
+}
+
+
+
+
+.card-item{
+
+
+    border-radius: 8px;
+    border-style:solid;
+    border-color: grey;
+
+    
+    box-shadow: 0 4px 10px;
+    
+    
+    min-width: 300px;
+    max-width: 300px;
+
+
+    min-height: 400px;
+    
+   
+
+
+    margin: 10px 20px;
+
+    transition: 0.5s;
+
+
+}
+
+
+.card-item:hover{
+    transform: scale(1.03);
+    
+}
+
+
+
+.card-item__picture{
+    
+    min-height: 200px;
+    
+    min-width: 100%;
+    max-width: inherit;
+    
+    
+    
+
+
+    
+    
+    border-radius: 6px;
+
+    object-fit: cover;
+}
+
+
+
+
+.card-item__informations{
+    
+
+    margin: 0 10px;
+    height: 100%;
+
+} 
+
+
+.card-item__title{
+    color: rgb(10, 7, 189);
+    font-weight: bold;
+    
+    margin: 10px 0;
+
+}
+
+
+.card-item__informations__datapost{
+
+    margin: 9px 0;
+    
+
+}
+
+
+
+/* TODO: Definir máxima quantidade de caracteres a serem mostradas */
+.card-item__description{
+    
+    display: block;
+
+
+    color: black;
+    font-weight: bold;
+    word-wrap: break-word;
+
+    margin: 8px 0;
+    padding: 0 10px;
+
+    
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+  
+
+}
+
+
+
+
+.card-item__tags{
+    background-color: grey
+}
+
+
+button.card-item__button{
+    
+    display: block;
+    
+    margin-top: auto;
+    
+    color: white;
+    font-weight: bold;
+    
+
+    border-radius: 0 0 8px 8px;
+
+    padding: 10px;
+
+
+    background-color: rgb(50, 179, 11);
+    border-style: none;
+
+    
+    
+
+}
+
+
+
+.card-item__button:hover{
+    background-color: rgb(29, 107, 5);
+}
+
+
+
+
+
+
+
+
+
+
+.logo{
+    margin-left:10px;
+}
+
+
+.header .menu{
+    list-style: none;
+
+}
+
+.header .menu>*{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+.menu__link-items{
+
+    display: block;
+
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: bold;
+}
+
+.menu__link-items:hover{
+    color:rgb(0, 255, 221);
+    text-decoration-line: underline;
+    text-decoration-thickness: 2.4px;
+}
+
+.menu__link-items:target{
+    color:rgb(0, 255, 221);
+}
+
+
+
+
+
+
+
+footer{
+    
+    background-color: black;
+    color: white;
+
+    font-family: var(--secondary-font);
+    padding: 20px;
+
+    text-align: center;
+}
+
+

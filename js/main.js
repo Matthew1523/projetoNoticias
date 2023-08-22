@@ -44,7 +44,7 @@ async function getNews(){
     //     }
 
         
-        const news = document.getElementsByClassName("cardbox");
+        const news = document.getElementsByID("cardbox");
         
        
         let i = 0;

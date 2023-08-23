@@ -18,51 +18,71 @@
 
 <main>
     <div class="user">
+    <div id="user__picture">
         <img 
-        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F03%2F46%2F83%2F96%2F360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg&f=1&nofb=1&ipt=f0da5a3ed2f19636d2103d018704c4d8b4705be749b81ce63cb34968c235be8d&ipo=images" 
+        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpic.onlinewebfonts.com%2Fsvg%2Fimg_24787.png&f=1&nofb=1&ipt=1d7fdecea3345b6090a7956c6569e44b57f0b3cb42c5f5c7024755e6ed3f7103&ipo=images" 
         alt="user__logo" 
         id="user__logo">
-        <br>
-        <i class="ri-pencil-line"></i><br>
+    </div>
+        
+        
+    <form action="" method="post">
+    <fieldset>
+        <legend>Informações do usuário</legend>
+        <div id="user-name" class="flex-direction__column" style="row-gap: 30px; flex-wrap: wrap;" >
+            
+            <div class="user-information__item">
+                <label class="title-user-information" for="">Primeiro Nome</label><br>
+                <input type="text" id="first-name" class="user-information__input-field" value="Samuel"></p>
+            </div>
 
-        <div id="user-name" class="flex-direction__row " >
-            <div id="user-name__first-last-name" class="flex-direction__column flex-wrap" style="flex:1; max-width: 40%;">
-                <label class="title-user-information" for="">Primeiro Nome</label>
-                <input type="text" id="first-name" class="user-information" value="Samuel"></p>
+            
+
+            
+            <div class="user-information__item">
+                <label class="title-user-information" for="" >Sobrenome</label><br>
+                <input type="text" id="last-name" class="user-information__input-field" value="Ferreira"></p>
             </div>
             
 
-            
-            <div class="flex-direction__column" style="flex:1;">
-                <label class="title-user-information" for="" >Sobrenome</label>
-                <input type="text" id="last-name" class="user-information" value="Ferreira"></p>
+        
+        
+            <div class="user-information__item">
+                <label class="title-user-information" for="">Nickname</label><br>
+                <input type="" class="user-information__input-field" value="Samuel">
             </div>
-            
 
+
+        <div class="user-information__item">
+            <label class="title-user-information" for="">Email</label><br>
+            <input type="text" class="user-information__input-field" value="samuelferreira@gmail.com">
+        </div>
+
+        <div class="user-information__item">
+            <label class="title-user-information" for="">Senha atual</label><br>
+            <input type="password" class="user-information__input-field" value="samuelferreira@gmail.com">
+            
+            <br><br>
+
+            <label class="title-user-information" for="">Nova senha</label><br>
+            <input type="password" class="user-information__input-field" value="">
         </div>
         
-        <div class="flex-direction__column">
-            <label class="title-user-information" for="">Nickname</label>
-            <input type="" class="user-information" value="Samuel">
-        </div>
-        <br>
-
-        <div class="flex-direction__column">
-            <label class="title-user-information" for="">Email</label>
-            <input type="text" class="user-information" value="samuelferreira@gmail.com">
-        </div>
 
     </div>
+
 
     <div class="user-edit-informations">
-        <button class="btn-edit">Change password</button>
+        
         <button id="update-btn" class="btn-edit">Atualizar dados</button>
-        <button class="delete-btn btn-edit">Delete account</button>
+        
         <br>
     </div>
 
+    
 
-
+    </fieldset>
+    </form>
     <ul>
         <li>Histórico</li>
         <li>Favorito</li>

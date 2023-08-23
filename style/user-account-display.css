@@ -1,0 +1,125 @@
+:root{
+    
+    font-size: 16px;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    
+
+
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+.flex-direction__column{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.flex-direction__row{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.flex_space-between{
+    justify-content: space-between;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+
+#user{
+
+
+}
+
+#user__logo{
+    
+    display: flex;
+    
+    margin: 0 auto;
+
+    min-width: 120px;
+    max-width: 120px;
+    
+
+}
+
+#update-btn{
+    
+
+    text-align: center;
+    align-self: center;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(0, 68, 255);
+
+    
+}
+
+.user-edit-informations{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+}
+
+
+.menu-row{
+
+}
+
+.btn-edit{
+    width: 80%;
+
+    border-radius: 8px;
+    padding: 1.5rem;
+    border-style: hidden;
+    margin: 0.5rem;
+}
+
+.delete-btn{
+    background-color: red;
+    color: white;
+}
+
+
+
+
+
+.title-user-information{
+    font-weight: bolder;
+
+}
+
+
+.user-information{
+    border-radius: 8px;
+    padding: 7px 0;
+    border-color: rgb(212, 212, 212);
+
+    box-shadow: none;
+
+}
+
+
+
+
+
+#user-name:nth-child(n){
+    flex:1;
+}

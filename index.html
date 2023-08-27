@@ -36,10 +36,14 @@
 
 
     <header class="header flex-container_row">
-      
+      <div id="logo">
+        <a href="#">
+          <h1 >DSMA</h1>
+        </a>
+      </div>
 
 
-      <nav class="nav-bar">
+      <nav class="nav-bar display_hidden">
         <i
           class="header-icon no-display profile-picture ri-account-circle-fill ri-2x"
         ></i>
@@ -49,18 +53,17 @@
 
  
 
-      <div id="logo">
-        <h1>DSMA</h1>
-      </div>
-
-
       <ul class="menu wrapper">
         <li><a class="menu__link-items" href="index.html">Início</a></li>
         <li><a class="menu__link-items" href="#">Tecnologia</a></li>
         <li><a class="menu__link-items" href="#">Política</a></li>
         <li><a class="menu__link-items" href="#">Esportes</a></li>
       </ul>
-     
+ 
+      <div id="login">
+        <button id="btn-register-user">Cadastrar</button>
+        <button id="btn-login">Entrar</button>
+      </div>
 
  
     </header>
@@ -81,13 +84,17 @@
     <main>
       <div class="popular-news content-area wrapper">
         <div class="title-trending-area">
-          <h3><i class="ri-fire-line"></i> Populares</h3>
+          <h3 class="content-area__title"><i class="ri-fire-line"></i> Populares</h3>
 
-          <div class="popular-news__current-image flex-container_row">
-            <div class="popular-news__content">
+          <div class="popular-news__current-image flex-container_column" style="flex-direction: column-reverse;">
+            
+            <div class="popular-news__description">
               Com primeira taça no Inter Miami, Messi se isola como o jogador
               com mais títulos do futebol; veja ranking
             </div>
+
+            <div class="tag-popular">Em putaria</div>
+
           </div>
         </div>
       </div>
@@ -105,11 +112,23 @@
       </aside>
 
       <div class="general-news content-area">
-        <h3><i class="ri-newspaper-line"></i> Notícias gerais</h3>
+        <h3 class="content-area__title">
+          <i class="ri-newspaper-line"></i> 
+          Notícias gerais
+        </h3>
 
+      
 
+      <div class="general-news__day-filter">
+      <label class="day-filter__title">Dia da notícia</label>
 
-      </div> 
+      <ul>
+        <li class="btn-day-filter">Hoje</li>
+        <li class="btn-day-filter">Semana</li>
+        <li class="btn-day-filter">Mês</li>
+      </ul>
+    </div>
+      
 
       <div class="cardbox">
         <div class="card-item flex-container_column" data-name="c1">
@@ -142,7 +161,7 @@
 
 
 
-
+        <!-- Row 1 -->
         <div class="card-item flex-container_column" data-name="c2">
           <img
             class="card-item__picture"
@@ -189,9 +208,11 @@
         
 
       
-    </div>
+    
 
-    <div class="cardbox">
+    
+
+      <!-- Row 2 -->
       <div class="card-item flex-container_column" data-name="c1">
         <img
           class="card-item__picture"
@@ -275,13 +296,14 @@
 
 
     </div>
+  </div> 
   
 
-    <div id="cardbox" class="cardbox flex-container_row">
+    <div id="output" class="cardbox">
 
 
 
-      </div>
+    </div>
       
     </main>
 

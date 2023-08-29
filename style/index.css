@@ -508,7 +508,7 @@ main{
 
 
 .card-item__title{
-    color: rgb(13, 41, 197);
+    color: rgb(14, 66, 177);
     font-weight: bold;
     
     margin: 10px 0;
@@ -572,7 +572,7 @@ button.card-item__button{
     padding: 10px;
 
 
-    background-color: rgb(50, 179, 11);
+    background-color: rgb(7, 8, 6);
     border-style: none;
 
     
@@ -583,7 +583,7 @@ button.card-item__button{
 
 
 .card-item__button:hover{
-    background-color: rgb(29, 107, 5);
+    background-color: rgb(62, 63, 61);
 }
 
 
